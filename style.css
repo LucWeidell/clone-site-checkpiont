@@ -75,3 +75,11 @@ body {
   text-shadow: 1px 1px 4px black;
 }
 
+.text-green{
+  color:green;
+}
+
+.bg-light-grey{
+  background-color: rgb(236, 236, 236);
+}
+
