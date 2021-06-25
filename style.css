@@ -50,6 +50,11 @@ body {
   border-left: 4px green;
 }
 
+
+#lumber-info {
+  margin-right: 40px;
+}
+
 .height-25vh{
   height: 25vh;
 }
@@ -58,8 +63,8 @@ body {
   bottom: -5vh;
 }
 
-.height-20vh{
-  height: 20vh;
+.height-21vh{
+  height: 21vh;
 }
 
 .object-fit-contain {
