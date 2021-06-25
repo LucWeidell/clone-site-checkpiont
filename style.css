@@ -1,4 +1,4 @@
-
+/* Debug for body + basic root and body values*/
 body.debug .container,
 body.debug .container-fluid {
   outline: 2px double blue;
@@ -14,3 +14,15 @@ body.debug [class*="col-"] {
   outline: 2px dotted forestgreen;
   outline-offset: -3px;
 }
+
+:root{
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* The styling goes here */
