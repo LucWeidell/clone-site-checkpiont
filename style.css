@@ -26,3 +26,53 @@ body {
 }
 
 /* The styling goes here */
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-green {
+  background-color: rgb(26, 95, 26);
+}
+
+.bg-grey {
+  background-color: rgb(30, 32, 70);
+}
+
+.height-40vh{
+  height: 40vh;
+}
+
+.hero-img{
+  background-image: url(//placebeard.it/800x800);
+}
+
+.green-border{
+  border-left: 4px green;
+}
+
+.height-25vh{
+  height: 25vh;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.spill {
+  bottom: -5vh;
+}
+
+.height-20vh{
+  height: 20vh;
+}
+
+.object-fit-contain {
+  object-fit: cover;
+}
+
+.text-shadow{
+  text-shadow: 1px 1px 4px black;
+}
+ .col-shadow{
+  box-shadow: 3px black;
+ }
