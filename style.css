@@ -54,10 +54,6 @@ body {
   height: 25vh;
 }
 
-.bg-white {
-  background-color: white;
-}
-
 .spill {
   bottom: -5vh;
 }
@@ -73,6 +69,4 @@ body {
 .text-shadow{
   text-shadow: 1px 1px 4px black;
 }
- .col-shadow{
-  box-shadow: 3px black;
- }
+
