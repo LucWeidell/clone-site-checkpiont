@@ -47,13 +47,16 @@ body {
 }
 
 .hero-img{
-  background-image: url();
+  background-image: url(full_forest.jpg);
+  background-position: center;
+  min-height: 70vh;
 }
 
 #form-summary-img{
-  background-image: url("deforest.jpg");
+  background-image: url(deforest.jpg);
   background-size: cover;
   background-position: center;
+  border-left: 0.75vw solid green;
   max-height: 15vh;
 }
 .green-border{
