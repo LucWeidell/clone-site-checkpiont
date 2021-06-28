@@ -1,20 +1,4 @@
-/* Debug for body + basic root and body values*/
-body.debug .container,
-body.debug .container-fluid {
-  outline: 2px double blue;
-  outline-offset: -2px;
-}
-
-body.debug .row {
-  outline: 2px dashed red;
-  outline-offset: -2px;
-}
-
-body.debug [class*="col-"] {
-  outline: 2px dotted forestgreen;
-  outline-offset: -3px;
-}
-
+/* basic root and body values*/
 :root{
   scroll-behavior: smooth;
 }
@@ -34,21 +18,8 @@ body {
   background-color: rgb(26, 95, 26);
 }
 
-
 .bg-white-cust {
   background-color: rgba(255, 255, 255, 0.6);
-}
-
-.bg-grey {
-  background-color: rgb(30, 32, 70);
-}
-
-.height-40vh{
-  height: 40vh;
-}
-
-.height-70vh{
-  height: 70vh;
 }
 
 .hero-img{
@@ -77,6 +48,7 @@ body {
   border-left: 0.75vw solid green;
   max-height: 15vh;
 }
+
 .green-border{
   border-left: 4px green;
 }
@@ -102,6 +74,7 @@ body {
 .text-orng-red{
   color: orangered;
 }
+
 .text-green{
   color:green;
 }
