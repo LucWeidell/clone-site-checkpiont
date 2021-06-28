@@ -42,10 +42,20 @@ body {
   height: 40vh;
 }
 
-.hero-img{
-  background-image: url(//placebeard.it/800x800);
+.height-70vh{
+  height: 70vh;
 }
 
+.hero-img{
+  background-image: url();
+}
+
+#form-summary-img{
+  background-image: url("deforest.jpg");
+  background-size: cover;
+  background-position: center;
+  max-height: 15vh;
+}
 .green-border{
   border-left: 4px green;
 }
