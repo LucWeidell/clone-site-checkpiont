@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- NOTE Adding google font style sheet here: used on line 144 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="style.css">
@@ -36,7 +41,7 @@
       <div class="col-md-5">
         <div class="row p-2 align-items-center justify-content-center">
           <div class="col-md-9 text-light text-shadow">
-           <h5>Informative people check come here!</h5>
+           <h5>Informative people sign up here!</h5>
           </div>
           <div class="col-md-11 shadow-lg flex-column bg-white align-items-center">
             <div class="row align-items-center p-2">
@@ -44,27 +49,27 @@
               <div class="col-md-12">
                 <h6 class="text-green">Sign Up for Forest News.</h6>
               </div>
-              <div class="col-md-12">
-                <input type="text" placeholder="First">
+              <div class="col-md-12 my-1">
+                <input id="stnd-field" type="text" placeholder="First" style="width:387px">
               </div>
-              <div class="col-md-12">
-                <input type="text" placeholder="Last">
+              <div class="col-md-12 my-1" >
+                <input id="stnd-field" type="text" placeholder="Last" style="width:387px">
               </div>
-              <div class="col-md-12">
-                <input type="text" placeholder="Email">
+              <div class="col-md-12 my-1">
+                <input id="stnd-field" type="text" placeholder="Email" style="width:387px">
               </div>
-              <div class="col-md-12">
+              <div class="col-md-12 my-1">
                 <input type="text" placeholder="Phone">
-                <input type="text" placeholder="EXT.">
+                <input id="ext-field" type="text" placeholder="EXT.">
               </div>
-              <div class="col-md-12">
-                <input type="text" style="height:120px; width:200px" placeholder="Message" >
+              <div class="col-md-12 my-1">
+                <input id="message-window" type="text" style="height:120px; width:387px" placeholder="Message" >
               </div>
-              <div class="col-md-12">
+              <div class="col-md-12 my-1">
                 <input type="checkbox" id="checkBox" checked="checked">
                 <label for="checkBox"> Checking this gets you the latest tree news!</label>
               </div>
-              <div class="col-md-12">
+              <div class="col-md-12 my-1">
                 <input class="text-green bg-grey" type="button" value="Submit">
               </div>
             </form>
@@ -73,7 +78,7 @@
         </div>
       </div>
       <!-- TODO text over image and border left green -->
-      <div class="col-md-6 text-light text-shadow d-none d-md-block align-items-center justify-content-center"
+      <div class="col-md-6 my-5 ml-2 text-light text-shadow d-none d-md-block"
       id="form-summary-img">
         <h6>Dont Let This Happen to our Trees!</h6>
         <p>Subscribe with the form on the left to get become a part of the movement. Be the change! </p>
@@ -83,7 +88,7 @@
     <!-- 1. text and 2.spillover -->
     <div class="row bg-green flex-row justify-content-around p-4"
    >
-      <div class="col-md-5 text-light">
+      <div class="col-md-5 text-light order-1 oder-sm-2">
         <h5>Trees have been on this planet longer than us!</h5>
         <p id="lumber-info">Every day more and more historical trees as lost due
           to humanity's greed. We need to educate the populus on the genocide occuring in
@@ -93,7 +98,8 @@
       </div>
 
           <!-- 2. spillover icons with buttons here -->
-      <div class="col-md-5 shadow-lg p-3 bg-white d-flex flex-column justify-content-center spill rounded">
+      <div class="col-md-5 shadow-lg p-3 bg-white justify-content-center spill
+      rounded order-2 order-sm-1">
         <div>
         <a class="float-left" href="" target="_blank">
           <i class="mdi mdi-wrench"></i></a>
@@ -126,7 +132,7 @@
     <!-- image and icon and text -->
 
     <div class="row align-items-center p-4">
-      <div class="col-md-4 ">
+      <div class="col-md-4 p-1">
         <img class="object-fit-contain w-100 h-100" src="deforest-2.jpg" alt="">
       </div>
       <div class="col-md-8">
@@ -134,7 +140,9 @@
           <div class="col-md-12 ">
             <a class="float-left" href="" target="_blank">
               <i class="mdi mdi-pine-tree mdi-48px"></i></a>
-            <h3>Did you know by 2050 scientiest have estimated: 80% of the Amazon will be Gone!</h3>
+
+            <!-- NOTE custom text added on the header -->
+            <h3 class="custom-text">By 2050 Scientiest have Estimated: 80% of the Amazon will be Gone!</h3>
             <p>If you thought that these were problems of the past saying, "with modern technology
               we can overcome anything." Far from the truth technology is an enabler of this problem
               with third world contries gathering resources at an enormous pace.
@@ -153,21 +161,20 @@
 
     <!-- 3 card middle large and order change -->
     <div class="row justify-content-around align-items-center bg-light-grey text-center">
-      <div class="col-md-3 shadow-lg p-3 bg-white flex-column align-items-center">
-        <h6><i>"</i>This hurts often to read but now I know who to blame for ruining out planet.<i>"</i></h6>
+      <div class="col-sm-12 col-md-3 order-sm-2 order-md-1 shadow-lg p-3 bg-white flex-column align-items-center">
+        <h6><i>"</i>This often hurts to read but now I know who to blame for ruining out planet.<i>"</i></h6>
         <p class="text-green"><i>xXunknownXx</i><br> Blames everyone else for everything.</p>
       </div>
 
       <!-- This is the larger card -->
-      <div class="col-md-3 shadow-lg p-3 my-4 bg-white d-flex flex-column justify-content-center align-items-center text-center">
+      <div class="col-sm-12 col-md-3 order-sm-1 order-md-2 shadow-lg p-3 my-4 bg-white flex-column justify-content-center align-items-center text-center">
         <div class="row">
-          <div class="col-md-12 flex-row p-3 justify-content-around">
-              <i class="mdi mdi-36px mdi-star-circle"></i>
-              <i class="mdi mdi-36px mdi-star-circle"></i>
-              <i class="mdi mdi-36px mdi-star-circle"></i>
-              <i class="mdi mdi-36px mdi-star-circle"></i>
-              <i class="mdi mdi-36px mdi-star-circle"></i>
-            </div>
+          <div class="col-md-12 flex-row p-0 justify-content-center align-center">
+            <i class="mdi mdi-36px mdi-star-circle"></i>
+            <i class="mdi mdi-36px mdi-star-circle"></i>
+            <i class="mdi mdi-36px mdi-star-circle"></i>
+            <i class="mdi mdi-36px mdi-star-circle"></i>
+            <i class="mdi mdi-36px mdi-star-circle"></i>
           </div>
           <div class="col-md-12">
             <h6><i>"</i>Honestly couldnt think of any other place better for up to date tree
@@ -178,7 +185,8 @@
             <p class="text-green"><i>Jane Smith</i><br> Trees did nothing wrong.</p>
           </div>
         </div>
-      <div class="col-md-3 shadow-lg p-3 bg-white text-center">
+      </div>
+      <div class="col-sm-12 col-md-3 shadow-lg p-3 bg-white text-center order-3">
         <h6>"I love the current topics on forests and the many advocates involved.
           Go humanity!<i>"</i>
         </h6>
@@ -197,11 +205,11 @@
   </main>
 
   <!-- FOOT -->
-  <footer>
+  <footer class="container-fluid">
     <div class="row p-3 text-center text-green bg-white">
       <div class="col">
         <p>At this point you must be thinking what can I can do. This problem is big and solving
-          it wont be easy but spreading awareness is key. Sign Up!
+          it wont be easy but spreading awareness is key. <i>Sign Up!</i>
         </p>
       </div>
     </div>

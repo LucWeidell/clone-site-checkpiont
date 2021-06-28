@@ -52,6 +52,23 @@ body {
   min-height: 70vh;
 }
 
+/* My change when small screen */
+@media only screen and (max-width: 767px) {
+  #message-window {
+    height: 120px;
+    width:200px;
+  }
+  #stnd-field {
+    width:200px;
+  }
+  #ext-field {
+    width: 191px;
+  }
+  /* .hero-img{
+    background-image: url(Dogo.png);
+  } */
+}
+
 #form-summary-img{
   background-image: url(deforest.jpg);
   background-size: cover;
@@ -95,6 +112,11 @@ body {
 
 .text-green{
   color:green;
+}
+
+/* NOTE custom font CSS */
+.custom-text {
+  font-family: 'Staatliches', cursive;
 }
 
 .bg-light-grey{
