@@ -59,6 +59,10 @@ body {
   height: 25vh;
 }
 
+.height-30vh{
+  height: 30vh;
+}
+
 .spill {
   bottom: -5vh;
 }
